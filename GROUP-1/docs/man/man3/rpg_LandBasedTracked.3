@@ -1,0 +1,199 @@
+.TH "rpg::LandBasedTracked" 3 "Tue Nov 5 2019" "Version 1.0" "RWA3-Group1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+rpg::LandBasedTracked \- This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <landbasedtracked\&.h>\fP
+.PP
+Inherits \fBrpg::LandBasedRobot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLandBasedTracked\fP (std::string name='none', int x=0, int y=0)"
+.br
+.RI "This is the default constructor for land based tracked robot\&. "
+.ti -1c
+.RI "\fB~LandBasedTracked\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBGoUp\fP (int, int) override"
+.br
+.RI "GoUp routine\&. Robot moves in Up direction\&. "
+.ti -1c
+.RI "virtual void \fBGoDown\fP (int, int) override"
+.br
+.RI "GODown routine\&. Robot moves in Down direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnLeft\fP (int, int) override"
+.br
+.RI "TurnLeft routine\&. Robot moves in left direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnRight\fP (int, int) override"
+.br
+.RI "TurnRight routine\&. Robot moves in right direction\&. "
+.ti -1c
+.RI "virtual void \fBPickUp\fP (std::string) override"
+.br
+.RI "PickUp routine\&.The arm actuates to pick up the object\&. "
+.ti -1c
+.RI "virtual void \fBRelease\fP (std::string) override"
+.br
+.RI "Release routine\&. The arm releases the object\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string * \fBtrack_type\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "rpg::LandBasedTracked::LandBasedTracked (std::string name = \fC'none'\fP, int x = \fC0\fP, int y = \fC0\fP)\fC [inline]\fP"
+
+.PP
+This is the default constructor for land based tracked robot\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Name is set to None\&. 
+.br
+\fIx\fP x co-ordinate is set to 0\&.
+.IP "\(bu" 2
+
+.PP
+.br
+\fIy\fP x co-ordinate is set to 0\&. 
+.RE
+.PP
+
+.SS "rpg::LandBasedTracked::~LandBasedTracked ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void rpg::LandBasedTracked::GoDown (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+GODown routine\&. Robot moves in Down direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.SS "void rpg::LandBasedTracked::GoUp (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+GoUp routine\&. Robot moves in Up direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Implements \fBrpg::LandBasedRobot\fP\&.
+.SS "void rpg::LandBasedTracked::PickUp (std::string)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+PickUp routine\&.The arm actuates to pick up the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.SS "void rpg::LandBasedTracked::Release (std::string)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Release routine\&. The arm releases the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.SS "void rpg::LandBasedTracked::TurnLeft (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+TurnLeft routine\&. Robot moves in left direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.SS "void rpg::LandBasedTracked::TurnRight (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+TurnRight routine\&. Robot moves in right direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string* rpg::LandBasedTracked::track_type"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RWA3-Group1 from the source code\&.

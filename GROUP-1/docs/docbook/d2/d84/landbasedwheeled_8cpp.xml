@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_landbasedwheeled_8cpp">
+<title>GROUP-1/src/LandBasedWheeled/landbasedwheeled.cpp File Reference</title>
+<indexterm><primary>GROUP-1/src/LandBasedWheeled/landbasedwheeled.cpp</primary></indexterm>
+<programlisting>#include &quot;landbasedwheeled.h&quot;
+#include &lt;string.h&gt;
+#include &lt;iostream&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_landbasedwheeled_8cpp_1a3b534997cd03991dc38e87298ddd0f01">SpeedUp</link> (int)</para>
+
+<para>The function increases the speed of the robot, which is translated by the number of cells in the maze that the robot can traverse in each step. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_landbasedwheeled_8cpp_1a3b534997cd03991dc38e87298ddd0f01"/>    <section>
+    <title>SpeedUp()</title>
+<indexterm><primary>SpeedUp</primary><secondary>landbasedwheeled.cpp</secondary></indexterm>
+<indexterm><primary>landbasedwheeled.cpp</primary><secondary>SpeedUp</secondary></indexterm>
+<para><computeroutput>void SpeedUp (int )</computeroutput></para><para>
+
+<para>The function increases the speed of the robot, which is translated by the number of cells in the maze that the robot can traverse in each step. </para>
+</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,1426 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'd1/dc5/classrpg_1_1_land_based_robot';
+  cp-name   = 'rpg::LandBasedRobot';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd1/d3d/classrpg_1_1_land_based_tracked';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a2be4bd2332171e26d18687ef76f7f1c0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LandBasedRobot';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+"none"
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+This is the default constructor for land based tracked robot.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param name Name is set to None.
+@param x x co-ordinate is set to 0.
+* @param y x co-ordinate is set to 0.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1aac7f51ee3af3eb8a8d30f360ffeaafa2';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~LandBasedRobot';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a8cb4d486a21bb19e1bc58e922aafadec';
+      sec-mem-virt = pure-virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x_';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y_';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GoUp routine.  Robot moves in Up direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1aec0aa8a1f6293113d2af4808ccb57004';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoDown';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x_';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y_';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GODown routine. Robot moves in Down direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a8ffdf97572e6dffe7112796b8f60385d';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnLeft';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x_';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y_';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnLeft routine. Robot moves in left direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a17a76d5c914ccad3b433f035c57bcd11';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnRight';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x_';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y_';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnRight routine. Robot moves in right direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  are coordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a449b9a65bb960dcfd077a996be727514';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PickUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+PickUp routine.The arm actuates to pick up the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a5d4062be7b30d935d6468c092c12e20f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Release';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Release routine. The arm releases the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a74462fddfb731d9c9203d1640f3087ac';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_x';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Gets x co-ordinate.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return x co-ordinate
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a7d2cbde89ed698ee16177862e5c292fe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_y';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Gets y co-ordinate.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return y co-ordinate
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a15fc2f392fce80bb6d39485713a109c6';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'name_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '77';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a04d5a56def936d83fe646f31097922ee';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'speed_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1adbe004ac9d24c7aa519389dc96ce3d20';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'width_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '79';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a6e57eecc3c1981c3f7f975680d2debf5';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'length_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '80';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1acd8e27de9dcc74a9c4080b7f78d0b399';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'height_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a0e413d767643e034e63b44b47c44ffe9';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'capacity_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1a5fd4bca4ebdf535cea0d04dc64955f21';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/dc5/classrpg_1_1_land_based_robot_1afe63557a6d7c41a85d66ca5608562365';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y_';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+  cp-fileline  = '37';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+This is an abstract class containing attributes and methods for landbased navigation and handling of objects.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+@param name_: Name of the robot. 
+@param speed_: Driving speed of the robot.
+@param width_: Width of the base of the robot. 
+@param length_: Length of the base of the robot.
+@param height_: Height of the base of the robot.
+@param capacity_: Payload of the arm. 
+@param int x_: X coordinate of the robot in the maze. 
+@param int y_: Y coordinate of the robot in the maze. 
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'rpg::LandBasedWheeled';
+        node-link = {
+          node-link-id = 'd3/d9f/classrpg_1_1_land_based_wheeled';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'rpg::LandBasedRobot';
+        node-link = {
+          node-link-id = 'd1/dc5/classrpg_1_1_land_based_robot';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'rpg::LandBasedTracked';
+        node-link = {
+          node-link-id = 'd1/d3d/classrpg_1_1_land_based_tracked';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd1/d3d/classrpg_1_1_land_based_tracked';
+  cp-name   = 'rpg::LandBasedTracked';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd1/dc5/classrpg_1_1_land_based_robot';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1a5f9d4e018953467cf525b068fa02e9d4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LandBasedTracked';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+"none"
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+This is the default constructor for land based tracked robot.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param name Name is set to None.
+@param x x co-ordinate is set to 0.
+* @param y x co-ordinate is set to 0.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1ad946995e785777e0eb481c9c88180df1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~LandBasedTracked';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1ae0baf884c76bb92320afcba5a95efd79';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GoUp routine.  Robot moves in Up direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1a8f7d8be0f0687ff5f366291d147bf4e6';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoDown';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GODown routine. Robot moves in Down direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1a9ee32eedc2e1136031da281ea6a1d0a3';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnLeft';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnLeft routine. Robot moves in left direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1a984bca4e1d2d0db75bcb1a9334a37c57';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnRight';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnRight routine. Robot moves in right direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1ade1f3a332479c8b70600b23e2b9c4878';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PickUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+PickUp routine.The arm actuates to pick up the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1a46f838ed70ec8cdefa8417c7c469c52f';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Release';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Release routine. The arm releases the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd1/d3d/classrpg_1_1_land_based_tracked_1afac5d4fb4409e0e54b59c66af3648522';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'track_type';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+  cp-fileline  = '12';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'rpg::LandBasedRobot';
+        node-link = {
+          node-link-id = 'd1/dc5/classrpg_1_1_land_based_robot';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'rpg::LandBasedTracked';
+        node-link = {
+          node-link-id = 'd1/d3d/classrpg_1_1_land_based_tracked';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'rpg::LandBasedRobot';
+        node-link = {
+          node-link-id = 'd1/dc5/classrpg_1_1_land_based_robot';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'rpg::LandBasedTracked';
+        node-link = {
+          node-link-id = 'd1/d3d/classrpg_1_1_land_based_tracked';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd3/d9f/classrpg_1_1_land_based_wheeled';
+  cp-name   = 'rpg::LandBasedWheeled';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd1/dc5/classrpg_1_1_land_based_robot';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a839ea0ac0d2d7e1b4ee8742e011d4b5e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LandBasedWheeled';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+"none"
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1ac3aa4a6f08535b66aebd378f61e25673';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~LandBasedWheeled';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1ab4a7a62678a53f881957d43ae60991ac';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SpeedUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1abba689de20094b78d509dffb956dfc36';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GoUp routine.  Robot moves in Up direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1ac2985096e6bbe54e1c46db192bfe7512';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GoDown';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GODown routine. Robot moves in Down direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a2561b637380985af89a7b622e7ac3dd0';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnLeft';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnLeft routine. Robot moves in left direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a9751a9ebd666c48fa5e6b41fc62600bc';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TurnRight';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TurnRight routine. Robot moves in right direction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  are coordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a18cab228e0ce8d2ea4320ffda6f5e44e';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'PickUp';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+PickUp routine.The arm actuates to pick up the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1ad60fd3210bbbca32270c3ff53e174a53';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Release';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Release routine. The arm releases the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x , y  arecoordinates
+@return Nothing
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a94cb305e792ece916f26f5e03bc0e5b2';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'wheel_number';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d9f/classrpg_1_1_land_based_wheeled_1a3a646e12b4d13387444817913e53001e';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'wheel_type';
+      sec-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+  cp-fileline  = '12';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'rpg::LandBasedWheeled';
+        node-link = {
+          node-link-id = 'd3/d9f/classrpg_1_1_land_based_wheeled';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'rpg::LandBasedRobot';
+        node-link = {
+          node-link-id = 'd1/dc5/classrpg_1_1_land_based_robot';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'rpg::LandBasedWheeled';
+        node-link = {
+          node-link-id = 'd3/d9f/classrpg_1_1_land_based_wheeled';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'rpg::LandBasedRobot';
+        node-link = {
+          node-link-id = 'd1/dc5/classrpg_1_1_land_based_robot';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = 'dd/dd5/main_8cpp_8o_8d';
+  file-name = 'main.cpp.o.d';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/Debug/main.cpp.o.d';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'da/d71/src___land_based_robot__landbasedrobot_8cpp_8o_8d';
+  file-name = 'src_LandBasedRobot_landbasedrobot.cpp.o.d';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/Debug/src_LandBasedRobot_landbasedrobot.cpp.o.d';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'db/d41/src___land_based_tracked__landbasedtracked_8cpp_8o_8d';
+  file-name = 'src_LandBasedTracked_landbasedtracked.cpp.o.d';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/Debug/src_LandBasedTracked_landbasedtracked.cpp.o.d';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd7/da7/src___land_based_wheeled__landbasedwheeled_8cpp_8o_8d';
+  file-name = 'src_LandBasedWheeled_landbasedwheeled.cpp.o.d';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/Debug/src_LandBasedWheeled_landbasedwheeled.cpp.o.d';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'df/d0a/main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1a15b51c7a7d265dd4cd2a76f08a032e2d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'FollowActionPath';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+rpg::LandBasedRobot *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'robot';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::vector< std::string > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'vec';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'obj';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/main.cpp';
+      func-mem-desc-line = '26';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/main.cpp';
+      func-mem-desc-line = '45';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author GROUP 1
+@version 1.0
+
+@section LICENSE
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+@section DESCRIPTION
+
+This project is a C++ implementation of 'Mobile robotic arms that can drive through a maze and pick up objects'.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dc/df4/landbasedrobot_8cpp';
+  file-name = 'landbasedrobot.cpp';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author GROUP 1
+@version 1.0
+
+@section LICENSE
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+
+@section DESCRIPTION
+
+This project is used to find and mark a path in a given maze.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd8/dfa/landbasedrobot_8h';
+  file-name = 'landbasedrobot.h';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedRobot/landbasedrobot.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author GROUP 1
+@version 1.0
+
+@section LICENSE
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License, or (at your option) any later version.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'da/da1/landbasedtracked_8cpp';
+  file-name = 'landbasedtracked.cpp';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd9/dcf/landbasedtracked_8h';
+  file-name = 'landbasedtracked.h';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedTracked/landbasedtracked.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd2/d84/landbasedwheeled_8cpp';
+  file-name = 'landbasedwheeled.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'd2/d84/landbasedwheeled_8cpp_1a3b534997cd03991dc38e87298ddd0f01';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'SpeedUp';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.cpp';
+      func-mem-desc-line = '8';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The function increases the speed of the robot, which is translated 
+by the number of cells in the maze that the robot can traverse in each step.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd6/df6/landbasedwheeled_8h';
+  file-name = 'landbasedwheeled.h';
+  file-full-name  = 'D:/ENPM-809Y/aks/GROUP-1/src/LandBasedWheeled/landbasedwheeled.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dc/dc6/mainpage_8md';
+  file-name = 'mainpage.md';
+  file-full-name  = 'D:/ENPM-809Y/aks/mainpage.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

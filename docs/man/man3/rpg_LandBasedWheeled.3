@@ -1,0 +1,213 @@
+.TH "rpg::LandBasedWheeled" 3 "Tue Nov 5 2019" "Version 1.0" "RWA3-Group1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+rpg::LandBasedWheeled \- This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <landbasedwheeled\&.h>\fP
+.PP
+Inherits \fBrpg::LandBasedRobot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLandBasedWheeled\fP (std::string name='none', int x=0, int y=0)"
+.br
+.ti -1c
+.RI "\fB~LandBasedWheeled\fP ()"
+.br
+.ti -1c
+.RI "void \fBSpeedUp\fP (int)"
+.br
+.ti -1c
+.RI "virtual void \fBGoUp\fP (int, int) override"
+.br
+.RI "GoUp routine\&. Robot moves in Up direction\&. "
+.ti -1c
+.RI "virtual void \fBGoDown\fP (int, int) override"
+.br
+.RI "GODown routine\&. Robot moves in Down direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnLeft\fP (int, int) override"
+.br
+.RI "TurnLeft routine\&. Robot moves in left direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnRight\fP (int, int) override"
+.br
+.RI "TurnRight routine\&. Robot moves in right direction\&. "
+.ti -1c
+.RI "virtual void \fBPickUp\fP (std::string) override"
+.br
+.RI "PickUp routine\&.The arm actuates to pick up the object\&. "
+.ti -1c
+.RI "virtual void \fBRelease\fP (std::string) override"
+.br
+.RI "Release routine\&. The arm releases the object\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBwheel_number\fP"
+.br
+.ti -1c
+.RI "std::string * \fBwheel_type\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects\&. 
+.PP
+Definition at line 11 of file landbasedwheeled\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "rpg::LandBasedWheeled::LandBasedWheeled (std::string name = \fC'none'\fP, int x = \fC0\fP, int y = \fC0\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 14 of file landbasedwheeled\&.h\&.
+.SS "rpg::LandBasedWheeled::~LandBasedWheeled ()\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file landbasedwheeled\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void rpg::LandBasedWheeled::GoDown (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+GODown routine\&. Robot moves in Down direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 27 of file landbasedwheeled\&.cpp\&.
+.SS "void rpg::LandBasedWheeled::GoUp (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+GoUp routine\&. Robot moves in Up direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Implements \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 17 of file landbasedwheeled\&.cpp\&.
+.SS "void rpg::LandBasedWheeled::PickUp (std::string)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+PickUp routine\&.The arm actuates to pick up the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 50 of file landbasedwheeled\&.cpp\&.
+.SS "void rpg::LandBasedWheeled::Release (std::string)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Release routine\&. The arm releases the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 58 of file landbasedwheeled\&.cpp\&.
+.SS "void rpg::LandBasedWheeled::SpeedUp (int)"
+
+.SS "void rpg::LandBasedWheeled::TurnLeft (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+TurnLeft routine\&. Robot moves in left direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 36 of file landbasedwheeled\&.cpp\&.
+.SS "void rpg::LandBasedWheeled::TurnRight (int x, int y)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+TurnRight routine\&. Robot moves in right direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP are coordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBrpg::LandBasedRobot\fP\&.
+.PP
+Definition at line 45 of file landbasedwheeled\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int rpg::LandBasedWheeled::wheel_number\fC [protected]\fP"
+
+.PP
+Definition at line 32 of file landbasedwheeled\&.h\&.
+.SS "std::string* rpg::LandBasedWheeled::wheel_type\fC [protected]\fP"
+
+.PP
+Definition at line 33 of file landbasedwheeled\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RWA3-Group1 from the source code\&.

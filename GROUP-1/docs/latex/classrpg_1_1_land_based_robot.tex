@@ -1,0 +1,332 @@
+\hypertarget{classrpg_1_1_land_based_robot}{}\doxysection{rpg\+::Land\+Based\+Robot Class Reference}
+\label{classrpg_1_1_land_based_robot}\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+
+
+This is an abstract class containing attributes and methods for landbased navigation and handling of objects.  
+
+
+
+
+{\ttfamily \#include $<$landbasedrobot.\+h$>$}
+
+Inheritance diagram for rpg\+::Land\+Based\+Robot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrpg_1_1_land_based_robot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrpg_1_1_land_based_robot_a2be4bd2332171e26d18687ef76f7f1c0}{Land\+Based\+Robot}} (std\+::string name=\char`\"{}none\char`\"{}, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em This is the default constructor for land based tracked robot. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classrpg_1_1_land_based_robot_aac7f51ee3af3eb8a8d30f360ffeaafa2}{$\sim$\+Land\+Based\+Robot}} ()
+\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8cb4d486a21bb19e1bc58e922aafadec}{Go\+Up}} (int, int)=0
+\begin{DoxyCompactList}\small\item\em Go\+Up routine. Robot moves in Up direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_aec0aa8a1f6293113d2af4808ccb57004}{Go\+Down}} (int, int)
+\begin{DoxyCompactList}\small\item\em G\+O\+Down routine. Robot moves in Down direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8ffdf97572e6dffe7112796b8f60385d}{Turn\+Left}} (int, int)
+\begin{DoxyCompactList}\small\item\em Turn\+Left routine. Robot moves in left direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_a17a76d5c914ccad3b433f035c57bcd11}{Turn\+Right}} (int, int)
+\begin{DoxyCompactList}\small\item\em Turn\+Right routine. Robot moves in right direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_a449b9a65bb960dcfd077a996be727514}{Pick\+Up}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Pick\+Up routine.\+The arm actuates to pick up the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_robot_a5d4062be7b30d935d6468c092c12e20f}{Release}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Release routine. The arm releases the object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classrpg_1_1_land_based_robot_a74462fddfb731d9c9203d1640f3087ac}{get\+\_\+x}} () const
+\begin{DoxyCompactList}\small\item\em Gets x co-\/ordinate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classrpg_1_1_land_based_robot_a7d2cbde89ed698ee16177862e5c292fe}{get\+\_\+y}} () const
+\begin{DoxyCompactList}\small\item\em Gets y co-\/ordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classrpg_1_1_land_based_robot_a15fc2f392fce80bb6d39485713a109c6}{name\+\_\+}}
+\item 
+double \mbox{\hyperlink{classrpg_1_1_land_based_robot_a04d5a56def936d83fe646f31097922ee}{speed\+\_\+}}
+\item 
+double \mbox{\hyperlink{classrpg_1_1_land_based_robot_adbe004ac9d24c7aa519389dc96ce3d20}{width\+\_\+}}
+\item 
+double \mbox{\hyperlink{classrpg_1_1_land_based_robot_a6e57eecc3c1981c3f7f975680d2debf5}{length\+\_\+}}
+\item 
+double \mbox{\hyperlink{classrpg_1_1_land_based_robot_acd8e27de9dcc74a9c4080b7f78d0b399}{height\+\_\+}}
+\item 
+double \mbox{\hyperlink{classrpg_1_1_land_based_robot_a0e413d767643e034e63b44b47c44ffe9}{capacity\+\_\+}}
+\item 
+int \mbox{\hyperlink{classrpg_1_1_land_based_robot_a5fd4bca4ebdf535cea0d04dc64955f21}{x\+\_\+}}
+\item 
+int \mbox{\hyperlink{classrpg_1_1_land_based_robot_afe63557a6d7c41a85d66ca5608562365}{y\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is an abstract class containing attributes and methods for landbased navigation and handling of objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+} & Name of the robot. \\
+\hline
+{\em speed\+\_\+} & Driving speed of the robot. \\
+\hline
+{\em width\+\_\+} & Width of the base of the robot. \\
+\hline
+{\em length\+\_\+} & Length of the base of the robot. \\
+\hline
+{\em height\+\_\+} & Height of the base of the robot. \\
+\hline
+{\em capacity\+\_\+} & Payload of the arm. \\
+\hline
+{\em int} & x\+\_\+\+: X coordinate of the robot in the maze. \\
+\hline
+{\em int} & y\+\_\+\+: Y coordinate of the robot in the maze. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a2be4bd2332171e26d18687ef76f7f1c0}\label{classrpg_1_1_land_based_robot_a2be4bd2332171e26d18687ef76f7f1c0}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!LandBasedRobot@{LandBasedRobot}}
+\index{LandBasedRobot@{LandBasedRobot}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{LandBasedRobot()}{LandBasedRobot()}}
+{\footnotesize\ttfamily rpg\+::\+Land\+Based\+Robot\+::\+Land\+Based\+Robot (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}none\char`\"{}},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is the default constructor for land based tracked robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name is set to None. \\
+\hline
+{\em x} & x co-\/ordinate is set to 0.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\\
+\hline
+{\em y} & x co-\/ordinate is set to 0. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_aac7f51ee3af3eb8a8d30f360ffeaafa2}\label{classrpg_1_1_land_based_robot_aac7f51ee3af3eb8a8d30f360ffeaafa2}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!````~LandBasedRobot@{$\sim$LandBasedRobot}}
+\index{````~LandBasedRobot@{$\sim$LandBasedRobot}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{$\sim$LandBasedRobot()}{~LandBasedRobot()}}
+{\footnotesize\ttfamily virtual rpg\+::\+Land\+Based\+Robot\+::$\sim$\+Land\+Based\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a74462fddfb731d9c9203d1640f3087ac}\label{classrpg_1_1_land_based_robot_a74462fddfb731d9c9203d1640f3087ac}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily int rpg\+::\+Land\+Based\+Robot\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets x co-\/ordinate. 
+
+\begin{DoxyReturn}{Returns}
+x co-\/ordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a7d2cbde89ed698ee16177862e5c292fe}\label{classrpg_1_1_land_based_robot_a7d2cbde89ed698ee16177862e5c292fe}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily int rpg\+::\+Land\+Based\+Robot\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets y co-\/ordinate. 
+
+\begin{DoxyReturn}{Returns}
+y co-\/ordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_aec0aa8a1f6293113d2af4808ccb57004}\label{classrpg_1_1_land_based_robot_aec0aa8a1f6293113d2af4808ccb57004}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!GoDown@{GoDown}}
+\index{GoDown@{GoDown}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{GoDown()}{GoDown()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Go\+Down (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+G\+O\+Down routine. Robot moves in Down direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a8f7d8be0f0687ff5f366291d147bf4e6}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ac2985096e6bbe54e1c46db192bfe7512}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a8cb4d486a21bb19e1bc58e922aafadec}\label{classrpg_1_1_land_based_robot_a8cb4d486a21bb19e1bc58e922aafadec}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!GoUp@{GoUp}}
+\index{GoUp@{GoUp}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{GoUp()}{GoUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Go\+Up (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Go\+Up routine. Robot moves in Up direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_ae0baf884c76bb92320afcba5a95efd79}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_abba689de20094b78d509dffb956dfc36}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a449b9a65bb960dcfd077a996be727514}\label{classrpg_1_1_land_based_robot_a449b9a65bb960dcfd077a996be727514}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!PickUp@{PickUp}}
+\index{PickUp@{PickUp}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{PickUp()}{PickUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Pick\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pick\+Up routine.\+The arm actuates to pick up the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_ade1f3a332479c8b70600b23e2b9c4878}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a18cab228e0ce8d2ea4320ffda6f5e44e}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a5d4062be7b30d935d6468c092c12e20f}\label{classrpg_1_1_land_based_robot_a5d4062be7b30d935d6468c092c12e20f}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!Release@{Release}}
+\index{Release@{Release}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Release (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Release routine. The arm releases the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a46f838ed70ec8cdefa8417c7c469c52f}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ad60fd3210bbbca32270c3ff53e174a53}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a8ffdf97572e6dffe7112796b8f60385d}\label{classrpg_1_1_land_based_robot_a8ffdf97572e6dffe7112796b8f60385d}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!TurnLeft@{TurnLeft}}
+\index{TurnLeft@{TurnLeft}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{TurnLeft()}{TurnLeft()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Turn\+Left routine. Robot moves in left direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a9ee32eedc2e1136031da281ea6a1d0a3}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a2561b637380985af89a7b622e7ac3dd0}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a17a76d5c914ccad3b433f035c57bcd11}\label{classrpg_1_1_land_based_robot_a17a76d5c914ccad3b433f035c57bcd11}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!TurnRight@{TurnRight}}
+\index{TurnRight@{TurnRight}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{TurnRight()}{TurnRight()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Robot\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Turn\+Right routine. Robot moves in right direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & are coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a984bca4e1d2d0db75bcb1a9334a37c57}{rpg\+::\+Land\+Based\+Tracked}}, and \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a9751a9ebd666c48fa5e6b41fc62600bc}{rpg\+::\+Land\+Based\+Wheeled}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a0e413d767643e034e63b44b47c44ffe9}\label{classrpg_1_1_land_based_robot_a0e413d767643e034e63b44b47c44ffe9}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!capacity\_@{capacity\_}}
+\index{capacity\_@{capacity\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{capacity\_}{capacity\_}}
+{\footnotesize\ttfamily double rpg\+::\+Land\+Based\+Robot\+::capacity\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_acd8e27de9dcc74a9c4080b7f78d0b399}\label{classrpg_1_1_land_based_robot_acd8e27de9dcc74a9c4080b7f78d0b399}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!height\_@{height\_}}
+\index{height\_@{height\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{height\_}{height\_}}
+{\footnotesize\ttfamily double rpg\+::\+Land\+Based\+Robot\+::height\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a6e57eecc3c1981c3f7f975680d2debf5}\label{classrpg_1_1_land_based_robot_a6e57eecc3c1981c3f7f975680d2debf5}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!length\_@{length\_}}
+\index{length\_@{length\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{length\_}{length\_}}
+{\footnotesize\ttfamily double rpg\+::\+Land\+Based\+Robot\+::length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a15fc2f392fce80bb6d39485713a109c6}\label{classrpg_1_1_land_based_robot_a15fc2f392fce80bb6d39485713a109c6}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!name\_@{name\_}}
+\index{name\_@{name\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{name\_}{name\_}}
+{\footnotesize\ttfamily std\+::string rpg\+::\+Land\+Based\+Robot\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a04d5a56def936d83fe646f31097922ee}\label{classrpg_1_1_land_based_robot_a04d5a56def936d83fe646f31097922ee}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!speed\_@{speed\_}}
+\index{speed\_@{speed\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{speed\_}{speed\_}}
+{\footnotesize\ttfamily double rpg\+::\+Land\+Based\+Robot\+::speed\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_adbe004ac9d24c7aa519389dc96ce3d20}\label{classrpg_1_1_land_based_robot_adbe004ac9d24c7aa519389dc96ce3d20}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!width\_@{width\_}}
+\index{width\_@{width\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{width\_}{width\_}}
+{\footnotesize\ttfamily double rpg\+::\+Land\+Based\+Robot\+::width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_a5fd4bca4ebdf535cea0d04dc64955f21}\label{classrpg_1_1_land_based_robot_a5fd4bca4ebdf535cea0d04dc64955f21}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!x\_@{x\_}}
+\index{x\_@{x\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{x\_}{x\_}}
+{\footnotesize\ttfamily int rpg\+::\+Land\+Based\+Robot\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_robot_afe63557a6d7c41a85d66ca5608562365}\label{classrpg_1_1_land_based_robot_afe63557a6d7c41a85d66ca5608562365}} 
+\index{rpg::LandBasedRobot@{rpg::LandBasedRobot}!y\_@{y\_}}
+\index{y\_@{y\_}!rpg::LandBasedRobot@{rpg::LandBasedRobot}}
+\doxysubsubsection{\texorpdfstring{y\_}{y\_}}
+{\footnotesize\ttfamily int rpg\+::\+Land\+Based\+Robot\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Robot/\mbox{\hyperlink{landbasedrobot_8h}{landbasedrobot.\+h}}\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Robot/\mbox{\hyperlink{landbasedrobot_8cpp}{landbasedrobot.\+cpp}}\end{DoxyCompactItemize}

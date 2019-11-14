@@ -1,0 +1,286 @@
+.TH "rpg::LandBasedRobot" 3 "Tue Nov 5 2019" "Version 1.0" "RWA3-Group1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+rpg::LandBasedRobot \- This is an abstract class containing attributes and methods for landbased navigation and handling of objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <landbasedrobot\&.h>\fP
+.PP
+Inherited by \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLandBasedRobot\fP (std::string name='none', int x=0, int y=0)"
+.br
+.RI "This is the default constructor for land based tracked robot\&. "
+.ti -1c
+.RI "virtual \fB~LandBasedRobot\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBGoUp\fP (int, int)=0"
+.br
+.RI "GoUp routine\&. Robot moves in Up direction\&. "
+.ti -1c
+.RI "virtual void \fBGoDown\fP (int, int)"
+.br
+.RI "GODown routine\&. Robot moves in Down direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnLeft\fP (int, int)"
+.br
+.RI "TurnLeft routine\&. Robot moves in left direction\&. "
+.ti -1c
+.RI "virtual void \fBTurnRight\fP (int, int)"
+.br
+.RI "TurnRight routine\&. Robot moves in right direction\&. "
+.ti -1c
+.RI "virtual void \fBPickUp\fP (std::string)"
+.br
+.RI "PickUp routine\&.The arm actuates to pick up the object\&. "
+.ti -1c
+.RI "virtual void \fBRelease\fP (std::string)"
+.br
+.RI "Release routine\&. The arm releases the object\&. "
+.ti -1c
+.RI "int \fBget_x\fP () const"
+.br
+.RI "Gets x co-ordinate\&. "
+.ti -1c
+.RI "int \fBget_y\fP () const"
+.br
+.RI "Gets y co-ordinate\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname_\fP"
+.br
+.ti -1c
+.RI "double \fBspeed_\fP"
+.br
+.ti -1c
+.RI "double \fBwidth_\fP"
+.br
+.ti -1c
+.RI "double \fBlength_\fP"
+.br
+.ti -1c
+.RI "double \fBheight_\fP"
+.br
+.ti -1c
+.RI "double \fBcapacity_\fP"
+.br
+.ti -1c
+.RI "int \fBx_\fP"
+.br
+.ti -1c
+.RI "int \fBy_\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is an abstract class containing attributes and methods for landbased navigation and handling of objects\&. 
+
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIname_\fP Name of the robot\&. 
+.br
+\fIspeed_\fP Driving speed of the robot\&. 
+.br
+\fIwidth_\fP Width of the base of the robot\&. 
+.br
+\fIlength_\fP Length of the base of the robot\&. 
+.br
+\fIheight_\fP Height of the base of the robot\&. 
+.br
+\fIcapacity_\fP Payload of the arm\&. 
+.br
+\fIint\fP x_: X coordinate of the robot in the maze\&. 
+.br
+\fIint\fP y_: Y coordinate of the robot in the maze\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "rpg::LandBasedRobot::LandBasedRobot (std::string name = \fC'none'\fP, int x = \fC0\fP, int y = \fC0\fP)\fC [inline]\fP"
+
+.PP
+This is the default constructor for land based tracked robot\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Name is set to None\&. 
+.br
+\fIx\fP x co-ordinate is set to 0\&.
+.IP "\(bu" 2
+
+.PP
+.br
+\fIy\fP x co-ordinate is set to 0\&. 
+.RE
+.PP
+
+.SS "virtual rpg::LandBasedRobot::~LandBasedRobot ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int rpg::LandBasedRobot::get_x () const\fC [inline]\fP"
+
+.PP
+Gets x co-ordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+x co-ordinate 
+.RE
+.PP
+
+.SS "int rpg::LandBasedRobot::get_y () const\fC [inline]\fP"
+
+.PP
+Gets y co-ordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+y co-ordinate 
+.RE
+.PP
+
+.SS "void rpg::LandBasedRobot::GoDown (int x_, int y_)\fC [virtual]\fP"
+
+.PP
+GODown routine\&. Robot moves in Down direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "void rpg::LandBasedRobot::GoUp (int x_, int y_)\fC [pure virtual]\fP"
+
+.PP
+GoUp routine\&. Robot moves in Up direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Implemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "void rpg::LandBasedRobot::PickUp (std::string)\fC [virtual]\fP"
+
+.PP
+PickUp routine\&.The arm actuates to pick up the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "void rpg::LandBasedRobot::Release (std::string)\fC [virtual]\fP"
+
+.PP
+Release routine\&. The arm releases the object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "void rpg::LandBasedRobot::TurnLeft (int x_, int y_)\fC [virtual]\fP"
+
+.PP
+TurnLeft routine\&. Robot moves in left direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP arecoordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SS "void rpg::LandBasedRobot::TurnRight (int x_, int y_)\fC [virtual]\fP"
+
+.PP
+TurnRight routine\&. Robot moves in right direction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx,y\fP are coordinates 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Nothing 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBrpg::LandBasedTracked\fP, and \fBrpg::LandBasedWheeled\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double rpg::LandBasedRobot::capacity_\fC [protected]\fP"
+
+.SS "double rpg::LandBasedRobot::height_\fC [protected]\fP"
+
+.SS "double rpg::LandBasedRobot::length_\fC [protected]\fP"
+
+.SS "std::string rpg::LandBasedRobot::name_\fC [protected]\fP"
+
+.SS "double rpg::LandBasedRobot::speed_\fC [protected]\fP"
+
+.SS "double rpg::LandBasedRobot::width_\fC [protected]\fP"
+
+.SS "int rpg::LandBasedRobot::x_\fC [protected]\fP"
+
+.SS "int rpg::LandBasedRobot::y_\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RWA3-Group1 from the source code\&.

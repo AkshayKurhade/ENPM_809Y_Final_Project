@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_75e213ec0be569d93fa4159af64c0a12">
+<title>GROUP-1 Directory Reference</title>
+<indexterm><primary>GROUP-1 Directory Reference</primary></indexterm>
+Directory dependency graph for GROUP-1:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_75e213ec0be569d93fa4159af64c0a12_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_a29d0e4f727177e8ff7539371d7f34d5">Debug</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_22dcedbf368a72a8858e5e751cb2dc1c">src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

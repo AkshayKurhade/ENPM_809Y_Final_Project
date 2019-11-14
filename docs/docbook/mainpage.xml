@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage">
+<section xml:id="_index_1autotoc_md0">
+<title>Overview</title>
+
+<para>The scenario uses two types of mobile robotic arms that can drive and pick up objects in a maze. 
+<literallayout>&#160;&#xa;</literallayout>
+ The ﬁrst robot belongs to the C++ class <emphasis role="bold">LandBasedWheeled</emphasis> . 
+<literallayout>&#160;&#xa;</literallayout>
+ The second robot belongs to the C++ class <emphasis role="bold">LandBasedTracked.</emphasis> 
+<literallayout>&#160;&#xa;</literallayout>
+ 
+<literallayout>&#160;&#xa;</literallayout>
+ Both classes derive from the base class <emphasis role="bold">LandBasedRobot.</emphasis></para>
+</section>
+<section xml:id="_index_1autotoc_md1">
+<title>Compiling Instructions:</title>
+
+<para>Compile the program with: <literallayout><computeroutput>gcc&#32;-Wall&#32;-Wextra&#32;ReadFile.cpp
+gcc&#32;-Wall&#32;-Wextra&#32;ReadFile.cpp
+</computeroutput></literallayout> </para>
+</section>
+</chapter>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_landbasedrobot_8h">
+<title>GROUP-1/src/LandBasedRobot/landbasedrobot.h File Reference</title>
+<indexterm><primary>GROUP-1/src/LandBasedRobot/landbasedrobot.h</primary></indexterm>
+<programlisting>#include &lt;strclTabCtrling.h&gt;
+#include &lt;iostream&gt;
+</programlisting>Include dependency graph for landbasedrobot.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/d05/landbasedrobot_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/dbf/landbasedrobot_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classrpg_1_1_land_based_robot">rpg::LandBasedRobot</link></para>
+
+<para>This is an abstract class containing attributes and methods for landbased navigation and handling of objects. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para> <link linkend="_namespacerpg">rpg</link></para>
+
+<para>Namespace::rpg. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>GROUP 1 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0</para>
+</formalpara>
+</para>
+<section xml:id="_landbasedrobot_8h_1LICENSE">
+<title>LICENSE</title>
+
+<para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>RWA3-Group1</title>
+    </info>
+<chapter>
+    <title>ENPM809Y-RWA3-GROUP1</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="d8/d11/namespacerpg.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="d1/dc5/classrpg_1_1_land_based_robot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/d3d/classrpg_1_1_land_based_tracked.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d9f/classrpg_1_1_land_based_wheeled.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="dd/dd5/main_8cpp_8o_8d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="da/d71/src___land_based_robot__landbasedrobot_8cpp_8o_8d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d41/src___land_based_tracked__landbasedtracked_8cpp_8o_8d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/da7/src___land_based_wheeled__landbasedwheeled_8cpp_8o_8d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d0a/main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/df4/landbasedrobot_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/dfa/landbasedrobot_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="da/da1/landbasedtracked_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/dcf/landbasedtracked_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d84/landbasedwheeled_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d6/df6/landbasedwheeled_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dc6/mainpage_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

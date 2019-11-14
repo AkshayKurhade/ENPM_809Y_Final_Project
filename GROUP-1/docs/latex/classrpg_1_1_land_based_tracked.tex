@@ -1,0 +1,226 @@
+\hypertarget{classrpg_1_1_land_based_tracked}{}\doxysection{rpg\+::Land\+Based\+Tracked Class Reference}
+\label{classrpg_1_1_land_based_tracked}\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+
+
+This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects.  
+
+
+
+
+{\ttfamily \#include $<$landbasedtracked.\+h$>$}
+
+Inheritance diagram for rpg\+::Land\+Based\+Tracked\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrpg_1_1_land_based_tracked}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrpg_1_1_land_based_tracked_a5f9d4e018953467cf525b068fa02e9d4}{Land\+Based\+Tracked}} (std\+::string name=\char`\"{}none\char`\"{}, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em This is the default constructor for land based tracked robot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrpg_1_1_land_based_tracked_ad946995e785777e0eb481c9c88180df1}{$\sim$\+Land\+Based\+Tracked}} ()
+\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_ae0baf884c76bb92320afcba5a95efd79}{Go\+Up}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Go\+Up routine. Robot moves in Up direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a8f7d8be0f0687ff5f366291d147bf4e6}{Go\+Down}} (int, int) override
+\begin{DoxyCompactList}\small\item\em G\+O\+Down routine. Robot moves in Down direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a9ee32eedc2e1136031da281ea6a1d0a3}{Turn\+Left}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Turn\+Left routine. Robot moves in left direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a984bca4e1d2d0db75bcb1a9334a37c57}{Turn\+Right}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Turn\+Right routine. Robot moves in right direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_ade1f3a332479c8b70600b23e2b9c4878}{Pick\+Up}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Pick\+Up routine.\+The arm actuates to pick up the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_tracked_a46f838ed70ec8cdefa8417c7c469c52f}{Release}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Release routine. The arm releases the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string $\ast$ \mbox{\hyperlink{classrpg_1_1_land_based_tracked_afac5d4fb4409e0e54b59c66af3648522}{track\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_a5f9d4e018953467cf525b068fa02e9d4}\label{classrpg_1_1_land_based_tracked_a5f9d4e018953467cf525b068fa02e9d4}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!LandBasedTracked@{LandBasedTracked}}
+\index{LandBasedTracked@{LandBasedTracked}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{LandBasedTracked()}{LandBasedTracked()}}
+{\footnotesize\ttfamily rpg\+::\+Land\+Based\+Tracked\+::\+Land\+Based\+Tracked (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}none\char`\"{}},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is the default constructor for land based tracked robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name is set to None. \\
+\hline
+{\em x} & x co-\/ordinate is set to 0.
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\\
+\hline
+{\em y} & x co-\/ordinate is set to 0. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_ad946995e785777e0eb481c9c88180df1}\label{classrpg_1_1_land_based_tracked_ad946995e785777e0eb481c9c88180df1}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!````~LandBasedTracked@{$\sim$LandBasedTracked}}
+\index{````~LandBasedTracked@{$\sim$LandBasedTracked}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{$\sim$LandBasedTracked()}{~LandBasedTracked()}}
+{\footnotesize\ttfamily rpg\+::\+Land\+Based\+Tracked\+::$\sim$\+Land\+Based\+Tracked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_a8f7d8be0f0687ff5f366291d147bf4e6}\label{classrpg_1_1_land_based_tracked_a8f7d8be0f0687ff5f366291d147bf4e6}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!GoDown@{GoDown}}
+\index{GoDown@{GoDown}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{GoDown()}{GoDown()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Go\+Down (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+G\+O\+Down routine. Robot moves in Down direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_aec0aa8a1f6293113d2af4808ccb57004}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_ae0baf884c76bb92320afcba5a95efd79}\label{classrpg_1_1_land_based_tracked_ae0baf884c76bb92320afcba5a95efd79}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!GoUp@{GoUp}}
+\index{GoUp@{GoUp}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{GoUp()}{GoUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Go\+Up (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Go\+Up routine. Robot moves in Up direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8cb4d486a21bb19e1bc58e922aafadec}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_ade1f3a332479c8b70600b23e2b9c4878}\label{classrpg_1_1_land_based_tracked_ade1f3a332479c8b70600b23e2b9c4878}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!PickUp@{PickUp}}
+\index{PickUp@{PickUp}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{PickUp()}{PickUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Pick\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pick\+Up routine.\+The arm actuates to pick up the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a449b9a65bb960dcfd077a996be727514}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_a46f838ed70ec8cdefa8417c7c469c52f}\label{classrpg_1_1_land_based_tracked_a46f838ed70ec8cdefa8417c7c469c52f}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!Release@{Release}}
+\index{Release@{Release}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Release (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Release routine. The arm releases the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a5d4062be7b30d935d6468c092c12e20f}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_a9ee32eedc2e1136031da281ea6a1d0a3}\label{classrpg_1_1_land_based_tracked_a9ee32eedc2e1136031da281ea6a1d0a3}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!TurnLeft@{TurnLeft}}
+\index{TurnLeft@{TurnLeft}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{TurnLeft()}{TurnLeft()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turn\+Left routine. Robot moves in left direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8ffdf97572e6dffe7112796b8f60385d}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_a984bca4e1d2d0db75bcb1a9334a37c57}\label{classrpg_1_1_land_based_tracked_a984bca4e1d2d0db75bcb1a9334a37c57}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!TurnRight@{TurnRight}}
+\index{TurnRight@{TurnRight}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{TurnRight()}{TurnRight()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Tracked\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turn\+Right routine. Robot moves in right direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a17a76d5c914ccad3b433f035c57bcd11}{rpg\+::\+Land\+Based\+Robot}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_tracked_afac5d4fb4409e0e54b59c66af3648522}\label{classrpg_1_1_land_based_tracked_afac5d4fb4409e0e54b59c66af3648522}} 
+\index{rpg::LandBasedTracked@{rpg::LandBasedTracked}!track\_type@{track\_type}}
+\index{track\_type@{track\_type}!rpg::LandBasedTracked@{rpg::LandBasedTracked}}
+\doxysubsubsection{\texorpdfstring{track\_type}{track\_type}}
+{\footnotesize\ttfamily std\+::string$\ast$ rpg\+::\+Land\+Based\+Tracked\+::track\+\_\+type}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Tracked/\mbox{\hyperlink{landbasedtracked_8h}{landbasedtracked.\+h}}\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Tracked/\mbox{\hyperlink{landbasedtracked_8cpp}{landbasedtracked.\+cpp}}\end{DoxyCompactItemize}

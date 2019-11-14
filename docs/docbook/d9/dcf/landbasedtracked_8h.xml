@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_landbasedtracked_8h">
+<title>GROUP-1/src/LandBasedTracked/landbasedtracked.h File Reference</title>
+<indexterm><primary>GROUP-1/src/LandBasedTracked/landbasedtracked.h</primary></indexterm>
+<programlisting>#include &quot;landbasedrobot.h&quot;
+#include &lt;string.h&gt;
+#include &lt;iostream&gt;
+</programlisting>Include dependency graph for landbasedtracked.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d40/landbasedtracked_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d73/landbasedtracked_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classrpg_1_1_land_based_tracked">rpg::LandBasedTracked</link></para>
+
+<para>This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para> <link linkend="_namespacerpg">rpg</link></para>
+
+<para>Namespace::rpg. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

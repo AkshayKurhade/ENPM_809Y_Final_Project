@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacerpg">
+<title>rpg Namespace Reference</title>
+<indexterm><primary>rpg</primary></indexterm>
+<para>
+
+<para>Namespace::rpg. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classrpg_1_1_land_based_robot">LandBasedRobot</link></para>
+
+<para>This is an abstract class containing attributes and methods for landbased navigation and handling of objects. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classrpg_1_1_land_based_tracked">LandBasedTracked</link></para>
+
+<para>This is a concrete class containing attributes and methods for landbased tracked navigation and handling of objects. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classrpg_1_1_land_based_wheeled">LandBasedWheeled</link></para>
+
+<para>This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Namespace::rpg. </para>
+</section>
+</section>

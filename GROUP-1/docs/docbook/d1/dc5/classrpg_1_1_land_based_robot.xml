@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classrpg_1_1_land_based_robot">
+<title>rpg::LandBasedRobot Class Reference</title>
+<indexterm><primary>rpg::LandBasedRobot</primary></indexterm>
+<para>
+
+<para>This is an abstract class containing attributes and methods for landbased navigation and handling of objects. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;landbasedrobot.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for rpg::LandBasedRobot:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/dc5/classrpg_1_1_land_based_robot.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classrpg_1_1_land_based_robot_1a2be4bd2332171e26d18687ef76f7f1c0">LandBasedRobot</link> (std::string name=&quot;none&quot;, int x=0, int y=0)</para>
+
+<para>This is the default constructor for land based tracked robot. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classrpg_1_1_land_based_robot_1aac7f51ee3af3eb8a8d30f360ffeaafa2">~LandBasedRobot</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1a8cb4d486a21bb19e1bc58e922aafadec">GoUp</link> (int, int)=0</para>
+
+<para>GoUp routine. Robot moves in Up direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1aec0aa8a1f6293113d2af4808ccb57004">GoDown</link> (int, int)</para>
+
+<para>GODown routine. Robot moves in Down direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1a8ffdf97572e6dffe7112796b8f60385d">TurnLeft</link> (int, int)</para>
+
+<para>TurnLeft routine. Robot moves in left direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1a17a76d5c914ccad3b433f035c57bcd11">TurnRight</link> (int, int)</para>
+
+<para>TurnRight routine. Robot moves in right direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1a449b9a65bb960dcfd077a996be727514">PickUp</link> (std::string)</para>
+
+<para>PickUp routine.The arm actuates to pick up the object. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_robot_1a5d4062be7b30d935d6468c092c12e20f">Release</link> (std::string)</para>
+
+<para>Release routine. The arm releases the object. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classrpg_1_1_land_based_robot_1a74462fddfb731d9c9203d1640f3087ac">get_x</link> () const</para>
+
+<para>Gets x co-ordinate. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classrpg_1_1_land_based_robot_1a7d2cbde89ed698ee16177862e5c292fe">get_y</link> () const</para>
+
+<para>Gets y co-ordinate. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_classrpg_1_1_land_based_robot_1a15fc2f392fce80bb6d39485713a109c6">name_</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_classrpg_1_1_land_based_robot_1a04d5a56def936d83fe646f31097922ee">speed_</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_classrpg_1_1_land_based_robot_1adbe004ac9d24c7aa519389dc96ce3d20">width_</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_classrpg_1_1_land_based_robot_1a6e57eecc3c1981c3f7f975680d2debf5">length_</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_classrpg_1_1_land_based_robot_1acd8e27de9dcc74a9c4080b7f78d0b399">height_</link></para>
+</listitem>
+            <listitem><para>double <link linkend="_classrpg_1_1_land_based_robot_1a0e413d767643e034e63b44b47c44ffe9">capacity_</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classrpg_1_1_land_based_robot_1a5fd4bca4ebdf535cea0d04dc64955f21">x_</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classrpg_1_1_land_based_robot_1afe63557a6d7c41a85d66ca5608562365">y_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is an abstract class containing attributes and methods for landbased navigation and handling of objects. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name_</entry>
+                                <entry>
+<para>Name of the robot. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>speed_</entry>
+                                <entry>
+<para>Driving speed of the robot. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>width_</entry>
+                                <entry>
+<para>Width of the base of the robot. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length_</entry>
+                                <entry>
+<para>Length of the base of the robot. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>height_</entry>
+                                <entry>
+<para>Height of the base of the robot. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>capacity_</entry>
+                                <entry>
+<para>Payload of the arm. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>int</entry>
+                                <entry>
+<para>x_: X coordinate of the robot in the maze. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>int</entry>
+                                <entry>
+<para>y_: Y coordinate of the robot in the maze. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_robot_1a2be4bd2332171e26d18687ef76f7f1c0"/>    <section>
+    <title>LandBasedRobot()</title>
+<indexterm><primary>LandBasedRobot</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>LandBasedRobot</secondary></indexterm>
+<para><computeroutput>rpg::LandBasedRobot::LandBasedRobot (std::string name = <computeroutput>&quot;none&quot;</computeroutput>
+, int x = <computeroutput>0</computeroutput>
+, int y = <computeroutput>0</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>This is the default constructor for land based tracked robot. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>Name is set to None. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>x co-ordinate is set to 0.<itemizedlist>
+<listitem></listitem></itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>x co-ordinate is set to 0. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1aac7f51ee3af3eb8a8d30f360ffeaafa2"/>    <section>
+    <title>~LandBasedRobot()</title>
+<indexterm><primary>~LandBasedRobot</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>~LandBasedRobot</secondary></indexterm>
+<para><computeroutput>virtual rpg::LandBasedRobot::~LandBasedRobot ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_robot_1a74462fddfb731d9c9203d1640f3087ac"/>    <section>
+    <title>get_x()</title>
+<indexterm><primary>get_x</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>get_x</secondary></indexterm>
+<para><computeroutput>int rpg::LandBasedRobot::get_x ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets x co-ordinate. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>x co-ordinate </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a7d2cbde89ed698ee16177862e5c292fe"/>    <section>
+    <title>get_y()</title>
+<indexterm><primary>get_y</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>get_y</secondary></indexterm>
+<para><computeroutput>int rpg::LandBasedRobot::get_y ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets y co-ordinate. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>y co-ordinate </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1aec0aa8a1f6293113d2af4808ccb57004"/>    <section>
+    <title>GoDown()</title>
+<indexterm><primary>GoDown</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>GoDown</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::GoDown (int x_, int y_)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>GODown routine. Robot moves in Down direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classrpg_1_1_land_based_tracked_1a8f7d8be0f0687ff5f366291d147bf4e6">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1ac2985096e6bbe54e1c46db192bfe7512">rpg::LandBasedWheeled</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a8cb4d486a21bb19e1bc58e922aafadec"/>    <section>
+    <title>GoUp()</title>
+<indexterm><primary>GoUp</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>GoUp</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::GoUp (int x_, int y_)<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>GoUp routine. Robot moves in Up direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_classrpg_1_1_land_based_tracked_1ae0baf884c76bb92320afcba5a95efd79">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1abba689de20094b78d509dffb956dfc36">rpg::LandBasedWheeled</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a449b9a65bb960dcfd077a996be727514"/>    <section>
+    <title>PickUp()</title>
+<indexterm><primary>PickUp</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>PickUp</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::PickUp (std::string )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>PickUp routine.The arm actuates to pick up the object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classrpg_1_1_land_based_tracked_1ade1f3a332479c8b70600b23e2b9c4878">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1a18cab228e0ce8d2ea4320ffda6f5e44e">rpg::LandBasedWheeled</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a5d4062be7b30d935d6468c092c12e20f"/>    <section>
+    <title>Release()</title>
+<indexterm><primary>Release</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>Release</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::Release (std::string )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Release routine. The arm releases the object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classrpg_1_1_land_based_tracked_1a46f838ed70ec8cdefa8417c7c469c52f">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1ad60fd3210bbbca32270c3ff53e174a53">rpg::LandBasedWheeled</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a8ffdf97572e6dffe7112796b8f60385d"/>    <section>
+    <title>TurnLeft()</title>
+<indexterm><primary>TurnLeft</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>TurnLeft</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::TurnLeft (int x_, int y_)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>TurnLeft routine. Robot moves in left direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classrpg_1_1_land_based_tracked_1a9ee32eedc2e1136031da281ea6a1d0a3">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1a2561b637380985af89a7b622e7ac3dd0">rpg::LandBasedWheeled</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a17a76d5c914ccad3b433f035c57bcd11"/>    <section>
+    <title>TurnRight()</title>
+<indexterm><primary>TurnRight</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>TurnRight</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedRobot::TurnRight (int x_, int y_)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>TurnRight routine. Robot moves in right direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>are coordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_classrpg_1_1_land_based_tracked_1a984bca4e1d2d0db75bcb1a9334a37c57">rpg::LandBasedTracked</link>, and <link linkend="_classrpg_1_1_land_based_wheeled_1a9751a9ebd666c48fa5e6b41fc62600bc">rpg::LandBasedWheeled</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_robot_1a0e413d767643e034e63b44b47c44ffe9"/>    <section>
+    <title>capacity_</title>
+<indexterm><primary>capacity_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>capacity_</secondary></indexterm>
+<para><computeroutput>double rpg::LandBasedRobot::capacity_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1acd8e27de9dcc74a9c4080b7f78d0b399"/>    <section>
+    <title>height_</title>
+<indexterm><primary>height_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>height_</secondary></indexterm>
+<para><computeroutput>double rpg::LandBasedRobot::height_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a6e57eecc3c1981c3f7f975680d2debf5"/>    <section>
+    <title>length_</title>
+<indexterm><primary>length_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>length_</secondary></indexterm>
+<para><computeroutput>double rpg::LandBasedRobot::length_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a15fc2f392fce80bb6d39485713a109c6"/>    <section>
+    <title>name_</title>
+<indexterm><primary>name_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>name_</secondary></indexterm>
+<para><computeroutput>std::string rpg::LandBasedRobot::name_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a04d5a56def936d83fe646f31097922ee"/>    <section>
+    <title>speed_</title>
+<indexterm><primary>speed_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>speed_</secondary></indexterm>
+<para><computeroutput>double rpg::LandBasedRobot::speed_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1adbe004ac9d24c7aa519389dc96ce3d20"/>    <section>
+    <title>width_</title>
+<indexterm><primary>width_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>width_</secondary></indexterm>
+<para><computeroutput>double rpg::LandBasedRobot::width_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1a5fd4bca4ebdf535cea0d04dc64955f21"/>    <section>
+    <title>x_</title>
+<indexterm><primary>x_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>x_</secondary></indexterm>
+<para><computeroutput>int rpg::LandBasedRobot::x_<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_robot_1afe63557a6d7c41a85d66ca5608562365"/>    <section>
+    <title>y_</title>
+<indexterm><primary>y_</primary><secondary>rpg::LandBasedRobot</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedRobot</primary><secondary>y_</secondary></indexterm>
+<para><computeroutput>int rpg::LandBasedRobot::y_<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+GROUP-1/src/LandBasedRobot/<link linkend="_landbasedrobot_8h">landbasedrobot.h</link>GROUP-1/src/LandBasedRobot/<link linkend="_landbasedrobot_8cpp">landbasedrobot.cpp</link></section>
+</section>

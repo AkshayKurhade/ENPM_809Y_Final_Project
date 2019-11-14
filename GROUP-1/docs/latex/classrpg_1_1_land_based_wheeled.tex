@@ -1,0 +1,225 @@
+\hypertarget{classrpg_1_1_land_based_wheeled}{}\doxysection{rpg\+::Land\+Based\+Wheeled Class Reference}
+\label{classrpg_1_1_land_based_wheeled}\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+
+
+This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects.  
+
+
+
+
+{\ttfamily \#include $<$landbasedwheeled.\+h$>$}
+
+Inheritance diagram for rpg\+::Land\+Based\+Wheeled\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrpg_1_1_land_based_wheeled}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a839ea0ac0d2d7e1b4ee8742e011d4b5e}{Land\+Based\+Wheeled}} (std\+::string name=\char`\"{}none\char`\"{}, int x=0, int y=0)
+\item 
+\mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ac3aa4a6f08535b66aebd378f61e25673}{$\sim$\+Land\+Based\+Wheeled}} ()
+\item 
+void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ab4a7a62678a53f881957d43ae60991ac}{Speed\+Up}} (int)
+\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_abba689de20094b78d509dffb956dfc36}{Go\+Up}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Go\+Up routine. Robot moves in Up direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ac2985096e6bbe54e1c46db192bfe7512}{Go\+Down}} (int, int) override
+\begin{DoxyCompactList}\small\item\em G\+O\+Down routine. Robot moves in Down direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a2561b637380985af89a7b622e7ac3dd0}{Turn\+Left}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Turn\+Left routine. Robot moves in left direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a9751a9ebd666c48fa5e6b41fc62600bc}{Turn\+Right}} (int, int) override
+\begin{DoxyCompactList}\small\item\em Turn\+Right routine. Robot moves in right direction. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a18cab228e0ce8d2ea4320ffda6f5e44e}{Pick\+Up}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Pick\+Up routine.\+The arm actuates to pick up the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_ad60fd3210bbbca32270c3ff53e174a53}{Release}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Release routine. The arm releases the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a94cb305e792ece916f26f5e03bc0e5b2}{wheel\+\_\+number}}
+\item 
+std\+::string $\ast$ \mbox{\hyperlink{classrpg_1_1_land_based_wheeled_a3a646e12b4d13387444817913e53001e}{wheel\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a839ea0ac0d2d7e1b4ee8742e011d4b5e}\label{classrpg_1_1_land_based_wheeled_a839ea0ac0d2d7e1b4ee8742e011d4b5e}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!LandBasedWheeled@{LandBasedWheeled}}
+\index{LandBasedWheeled@{LandBasedWheeled}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{LandBasedWheeled()}{LandBasedWheeled()}}
+{\footnotesize\ttfamily rpg\+::\+Land\+Based\+Wheeled\+::\+Land\+Based\+Wheeled (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}none\char`\"{}},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_ac3aa4a6f08535b66aebd378f61e25673}\label{classrpg_1_1_land_based_wheeled_ac3aa4a6f08535b66aebd378f61e25673}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!````~LandBasedWheeled@{$\sim$LandBasedWheeled}}
+\index{````~LandBasedWheeled@{$\sim$LandBasedWheeled}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{$\sim$LandBasedWheeled()}{~LandBasedWheeled()}}
+{\footnotesize\ttfamily rpg\+::\+Land\+Based\+Wheeled\+::$\sim$\+Land\+Based\+Wheeled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_ac2985096e6bbe54e1c46db192bfe7512}\label{classrpg_1_1_land_based_wheeled_ac2985096e6bbe54e1c46db192bfe7512}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!GoDown@{GoDown}}
+\index{GoDown@{GoDown}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{GoDown()}{GoDown()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Go\+Down (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+G\+O\+Down routine. Robot moves in Down direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_aec0aa8a1f6293113d2af4808ccb57004}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_abba689de20094b78d509dffb956dfc36}\label{classrpg_1_1_land_based_wheeled_abba689de20094b78d509dffb956dfc36}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!GoUp@{GoUp}}
+\index{GoUp@{GoUp}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{GoUp()}{GoUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Go\+Up (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Go\+Up routine. Robot moves in Up direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8cb4d486a21bb19e1bc58e922aafadec}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a18cab228e0ce8d2ea4320ffda6f5e44e}\label{classrpg_1_1_land_based_wheeled_a18cab228e0ce8d2ea4320ffda6f5e44e}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!PickUp@{PickUp}}
+\index{PickUp@{PickUp}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{PickUp()}{PickUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Pick\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pick\+Up routine.\+The arm actuates to pick up the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a449b9a65bb960dcfd077a996be727514}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_ad60fd3210bbbca32270c3ff53e174a53}\label{classrpg_1_1_land_based_wheeled_ad60fd3210bbbca32270c3ff53e174a53}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!Release@{Release}}
+\index{Release@{Release}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Release (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Release routine. The arm releases the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a5d4062be7b30d935d6468c092c12e20f}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_ab4a7a62678a53f881957d43ae60991ac}\label{classrpg_1_1_land_based_wheeled_ab4a7a62678a53f881957d43ae60991ac}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!SpeedUp@{SpeedUp}}
+\index{SpeedUp@{SpeedUp}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{SpeedUp()}{SpeedUp()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Speed\+Up (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a2561b637380985af89a7b622e7ac3dd0}\label{classrpg_1_1_land_based_wheeled_a2561b637380985af89a7b622e7ac3dd0}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!TurnLeft@{TurnLeft}}
+\index{TurnLeft@{TurnLeft}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{TurnLeft()}{TurnLeft()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turn\+Left routine. Robot moves in left direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & arecoordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a8ffdf97572e6dffe7112796b8f60385d}{rpg\+::\+Land\+Based\+Robot}}.
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a9751a9ebd666c48fa5e6b41fc62600bc}\label{classrpg_1_1_land_based_wheeled_a9751a9ebd666c48fa5e6b41fc62600bc}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!TurnRight@{TurnRight}}
+\index{TurnRight@{TurnRight}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{TurnRight()}{TurnRight()}}
+{\footnotesize\ttfamily void rpg\+::\+Land\+Based\+Wheeled\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turn\+Right routine. Robot moves in right direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & are coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrpg_1_1_land_based_robot_a17a76d5c914ccad3b433f035c57bcd11}{rpg\+::\+Land\+Based\+Robot}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a94cb305e792ece916f26f5e03bc0e5b2}\label{classrpg_1_1_land_based_wheeled_a94cb305e792ece916f26f5e03bc0e5b2}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!wheel\_number@{wheel\_number}}
+\index{wheel\_number@{wheel\_number}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{wheel\_number}{wheel\_number}}
+{\footnotesize\ttfamily int rpg\+::\+Land\+Based\+Wheeled\+::wheel\+\_\+number\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrpg_1_1_land_based_wheeled_a3a646e12b4d13387444817913e53001e}\label{classrpg_1_1_land_based_wheeled_a3a646e12b4d13387444817913e53001e}} 
+\index{rpg::LandBasedWheeled@{rpg::LandBasedWheeled}!wheel\_type@{wheel\_type}}
+\index{wheel\_type@{wheel\_type}!rpg::LandBasedWheeled@{rpg::LandBasedWheeled}}
+\doxysubsubsection{\texorpdfstring{wheel\_type}{wheel\_type}}
+{\footnotesize\ttfamily std\+::string$\ast$ rpg\+::\+Land\+Based\+Wheeled\+::wheel\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Wheeled/\mbox{\hyperlink{landbasedwheeled_8h}{landbasedwheeled.\+h}}\item 
+G\+R\+O\+U\+P-\/1/src/\+Land\+Based\+Wheeled/\mbox{\hyperlink{landbasedwheeled_8cpp}{landbasedwheeled.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classrpg_1_1_land_based_wheeled">
+<title>rpg::LandBasedWheeled Class Reference</title>
+<indexterm><primary>rpg::LandBasedWheeled</primary></indexterm>
+<para>
+
+<para>This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;landbasedwheeled.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for rpg::LandBasedWheeled:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d9f/classrpg_1_1_land_based_wheeled.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classrpg_1_1_land_based_wheeled_1a839ea0ac0d2d7e1b4ee8742e011d4b5e">LandBasedWheeled</link> (std::string name=&quot;none&quot;, int x=0, int y=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classrpg_1_1_land_based_wheeled_1ac3aa4a6f08535b66aebd378f61e25673">~LandBasedWheeled</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classrpg_1_1_land_based_wheeled_1ab4a7a62678a53f881957d43ae60991ac">SpeedUp</link> (int)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1abba689de20094b78d509dffb956dfc36">GoUp</link> (int, int) override</para>
+
+<para>GoUp routine. Robot moves in Up direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1ac2985096e6bbe54e1c46db192bfe7512">GoDown</link> (int, int) override</para>
+
+<para>GODown routine. Robot moves in Down direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1a2561b637380985af89a7b622e7ac3dd0">TurnLeft</link> (int, int) override</para>
+
+<para>TurnLeft routine. Robot moves in left direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1a9751a9ebd666c48fa5e6b41fc62600bc">TurnRight</link> (int, int) override</para>
+
+<para>TurnRight routine. Robot moves in right direction. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1a18cab228e0ce8d2ea4320ffda6f5e44e">PickUp</link> (std::string) override</para>
+
+<para>PickUp routine.The arm actuates to pick up the object. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classrpg_1_1_land_based_wheeled_1ad60fd3210bbbca32270c3ff53e174a53">Release</link> (std::string) override</para>
+
+<para>Release routine. The arm releases the object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classrpg_1_1_land_based_wheeled_1a94cb305e792ece916f26f5e03bc0e5b2">wheel_number</link></para>
+</listitem>
+            <listitem><para>std::string * <link linkend="_classrpg_1_1_land_based_wheeled_1a3a646e12b4d13387444817913e53001e">wheel_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is a concrete class containing attributes and methods for landbased wheeled navigation and handling of objects. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_wheeled_1a839ea0ac0d2d7e1b4ee8742e011d4b5e"/>    <section>
+    <title>LandBasedWheeled()</title>
+<indexterm><primary>LandBasedWheeled</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>LandBasedWheeled</secondary></indexterm>
+<para><computeroutput>rpg::LandBasedWheeled::LandBasedWheeled (std::string name = <computeroutput>&quot;none&quot;</computeroutput>
+, int x = <computeroutput>0</computeroutput>
+, int y = <computeroutput>0</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1ac3aa4a6f08535b66aebd378f61e25673"/>    <section>
+    <title>~LandBasedWheeled()</title>
+<indexterm><primary>~LandBasedWheeled</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>~LandBasedWheeled</secondary></indexterm>
+<para><computeroutput>rpg::LandBasedWheeled::~LandBasedWheeled ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_wheeled_1ac2985096e6bbe54e1c46db192bfe7512"/>    <section>
+    <title>GoDown()</title>
+<indexterm><primary>GoDown</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>GoDown</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::GoDown (int x, int y)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>GODown routine. Robot moves in Down direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classrpg_1_1_land_based_robot_1aec0aa8a1f6293113d2af4808ccb57004">rpg::LandBasedRobot</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1abba689de20094b78d509dffb956dfc36"/>    <section>
+    <title>GoUp()</title>
+<indexterm><primary>GoUp</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>GoUp</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::GoUp (int x, int y)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>GoUp routine. Robot moves in Up direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Implements <link linkend="_classrpg_1_1_land_based_robot_1a8cb4d486a21bb19e1bc58e922aafadec">rpg::LandBasedRobot</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1a18cab228e0ce8d2ea4320ffda6f5e44e"/>    <section>
+    <title>PickUp()</title>
+<indexterm><primary>PickUp</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>PickUp</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::PickUp (std::string )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>PickUp routine.The arm actuates to pick up the object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classrpg_1_1_land_based_robot_1a449b9a65bb960dcfd077a996be727514">rpg::LandBasedRobot</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1ad60fd3210bbbca32270c3ff53e174a53"/>    <section>
+    <title>Release()</title>
+<indexterm><primary>Release</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>Release</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::Release (std::string )<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Release routine. The arm releases the object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classrpg_1_1_land_based_robot_1a5d4062be7b30d935d6468c092c12e20f">rpg::LandBasedRobot</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1ab4a7a62678a53f881957d43ae60991ac"/>    <section>
+    <title>SpeedUp()</title>
+<indexterm><primary>SpeedUp</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>SpeedUp</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::SpeedUp (int )</computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1a2561b637380985af89a7b622e7ac3dd0"/>    <section>
+    <title>TurnLeft()</title>
+<indexterm><primary>TurnLeft</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>TurnLeft</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::TurnLeft (int x, int y)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>TurnLeft routine. Robot moves in left direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>arecoordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classrpg_1_1_land_based_robot_1a8ffdf97572e6dffe7112796b8f60385d">rpg::LandBasedRobot</link>.</para>
+    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1a9751a9ebd666c48fa5e6b41fc62600bc"/>    <section>
+    <title>TurnRight()</title>
+<indexterm><primary>TurnRight</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>TurnRight</secondary></indexterm>
+<para><computeroutput>void rpg::LandBasedWheeled::TurnRight (int x, int y)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>TurnRight routine. Robot moves in right direction. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y</entry>
+                                <entry>
+<para>are coordinates </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Nothing </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classrpg_1_1_land_based_robot_1a17a76d5c914ccad3b433f035c57bcd11">rpg::LandBasedRobot</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classrpg_1_1_land_based_wheeled_1a94cb305e792ece916f26f5e03bc0e5b2"/>    <section>
+    <title>wheel_number</title>
+<indexterm><primary>wheel_number</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>wheel_number</secondary></indexterm>
+<para><computeroutput>int rpg::LandBasedWheeled::wheel_number<computeroutput>[protected]</computeroutput></computeroutput></para>    </section><anchor xml:id="_classrpg_1_1_land_based_wheeled_1a3a646e12b4d13387444817913e53001e"/>    <section>
+    <title>wheel_type</title>
+<indexterm><primary>wheel_type</primary><secondary>rpg::LandBasedWheeled</secondary></indexterm>
+<indexterm><primary>rpg::LandBasedWheeled</primary><secondary>wheel_type</secondary></indexterm>
+<para><computeroutput>std::string* rpg::LandBasedWheeled::wheel_type<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+GROUP-1/src/LandBasedWheeled/<link linkend="_landbasedwheeled_8h">landbasedwheeled.h</link>GROUP-1/src/LandBasedWheeled/<link linkend="_landbasedwheeled_8cpp">landbasedwheeled.cpp</link></section>
+</section>

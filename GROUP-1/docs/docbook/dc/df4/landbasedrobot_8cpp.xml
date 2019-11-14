@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_landbasedrobot_8cpp">
+<title>GROUP-1/src/LandBasedRobot/landbasedrobot.cpp File Reference</title>
+<indexterm><primary>GROUP-1/src/LandBasedRobot/landbasedrobot.cpp</primary></indexterm>
+<programlisting>#include &quot;landbasedrobot.h&quot;
+#include &lt;string.h&gt;
+#include &lt;iostream&gt;
+</programlisting><section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>GROUP 1 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0</para>
+</formalpara>
+</para>
+<section xml:id="_landbasedrobot_8h_1LICENSE">
+<title>LICENSE</title>
+
+<para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</para>
+</section>
+<section xml:id="_landbasedrobot_8cpp_1DESCRIPTION">
+<title>DESCRIPTION</title>
+
+<para>This project is used to find and mark a path in a given maze. </para>
+</section>
+</section>
+</section>
